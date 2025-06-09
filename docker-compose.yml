@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:16
+    container_name: postgres_nossafaculdade
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: nossafaculdade
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app_nossafaculdade
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://admin:admin@db:5432/nossafaculdade
+      JWT_SECRET: minha-chave-secreta
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/projeto-anka-tech
+    command: sh ./start.sh
+
+volumes:
+  postgres_data:
