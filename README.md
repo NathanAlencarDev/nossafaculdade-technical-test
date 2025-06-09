@@ -1,7 +1,4 @@
-
-
-````md
-# 📘 Site Institucional - Venda de Cursos (UNIFAMEC Clone)
+# 📘 Teste Técnico UNIFAMEC
 
 Este projeto é um **site institucional responsivo** desenvolvido com **Next.js**, com o objetivo de simular a venda de cursos online, inspirado no site da [UNIFAMEC Cariri](https://unifameccariri.com.br). Inclui um **CMS com autenticação protegida por JWT** para gerenciar cursos, imagens e dados relevantes.
 
@@ -160,7 +157,7 @@ Todas as imagens foram extraídas do site original da UNIFAMEC e utilizadas apen
 
 ## 📬 Contato
 
-Projeto desenvolvido por **\Nathan Alencar** como parte de um desafio técnico.
+Projeto desenvolvido por **Nathan Alencar** como parte de um desafio técnico.
 
 📧 Email: [nathanalencar777@email.com](mailto:nathanalencar777@email.com)
 🔗 GitHub: [github.com/NathanAlencarDev](https://github.com/NathanAlencarDev)
